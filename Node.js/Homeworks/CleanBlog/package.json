@@ -1,0 +1,24 @@
+{
+  "name": "cleanblog",
+  "version": "1.0.0",
+  "description": "Patika.dev homework project",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "blog",
+    "patika.dev",
+    "homework"
+  ],
+  "author": "Ibrahim Sakaci <sakacibrahim@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "prettier": "2.6.1"
+  },
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
