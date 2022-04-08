@@ -1,0 +1,45 @@
+<%- include('partials/_header.ejs'); %>
+
+
+  <body>
+    <!-- Navigation -->
+    <%- include('partials/_navigation.ejs'); %>
+
+    <!-- Page Header -->
+    <header
+      class="masthead"
+      style="background-image: url('/img/contact-bg.jpg')"
+    >
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="page-heading">
+              <h1>ERROR!</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <h3><%= title %></h3>
+          <p><%= message %></p>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- Footer -->
+    <%- include('partials/_footer.ejs'); %>
+
+    <!-- Contact Form JavaScript -->
+    <script src="/js/jqBootstrapValidation.js"></script>
+    <script src="/js/contact_me.js"></script>
+
+  </body>
+</html>
