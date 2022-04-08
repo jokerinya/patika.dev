@@ -15,7 +15,10 @@ const app = express();
 // Connect to db
 (async () => {
   try {
-    await mongoose.connect('mongodb://0.0.0.0:27017/cleanblog-test-db');
+    // await mongoose.connect('mongodb://0.0.0.0:27017/cleanblog-test-db');
+    await mongoose.connect(
+      'mongodb+srv://jokerinya:TpkvDebap5auNAIY@cluster0.kkt0d.mongodb.net/clean-blog-db?retryWrites=true&w=majority'
+    );
     console.log('Connected to DB');
   } catch (error) {
     console.log(error);
@@ -46,6 +49,7 @@ app.post('/post', postController.addNewPost);
 app.put('/post/:id', postController.editPost);
 app.delete('/post/:id', postController.deletePost);
 // Routes End
+app.all('*', pageController.getErrorPage);
 
 const port = process.env.PORT || 3000;
 
